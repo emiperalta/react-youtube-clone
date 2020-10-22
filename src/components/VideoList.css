@@ -1,0 +1,8 @@
+.videoList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: rigth;
+    /* padding: 25px 15px 25px 25px; */
+    width: 33%;
+}

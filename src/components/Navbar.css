@@ -48,10 +48,16 @@ form {
 }
 
 .navbar__inputButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 65px !important;
     font-size: 20px !important;
     color: gray;
     cursor: pointer;
+    border: none;
+    background: #fff;
+    outline-style: none;
 }
 
 .navbar__icons {
