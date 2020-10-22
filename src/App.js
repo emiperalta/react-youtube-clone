@@ -20,10 +20,13 @@ const App = () => {
 				q: searchText
 			}
 		});
-		
+
 		setVideos(response.data.items);
 		setSelectedVideo(response.data.items[0]);
-		console.log(response.data.items);
+	}
+
+	const onVideoSelectHandler = video => {
+		setSelectedVideo(video);
 	}
 
 	return (
@@ -33,8 +36,17 @@ const App = () => {
 				searchText={searchText}
 				setSearchText={setSearchText}
 			/>
-			<VideoDetail selectedVideo={selectedVideo} videos={videos} />
-			<VideoList />
+			<div className="videoPage">
+				<div className="videoPage__video">
+					<VideoDetail selectedVideo={selectedVideo} />
+				</div>
+				<div className="videoPage__list">
+					<VideoList
+						videos={videos}
+						onVideoSelectHandler={onVideoSelectHandler}
+					/>
+				</div>
+			</div>
 		</div>
 	);
 };

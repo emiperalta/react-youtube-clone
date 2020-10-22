@@ -1,0 +1,15 @@
+.videoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.videoItem img {
+    height: 12vh;
+}
+
+.videoItem b {
+    margin-left: 10px;
+    font-size: 14px;
+}

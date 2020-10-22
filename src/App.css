@@ -1,0 +1,13 @@
+.videoPage {
+    display: flex;
+}
+
+.videoPage__video {
+    width: 67%;
+    height: 100%;
+}
+
+.videoPage__list {
+    width: 33%;
+    margin-right: 15px;
+}   
