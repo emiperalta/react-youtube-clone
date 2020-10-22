@@ -27,6 +27,8 @@ const App = () => {
 
 	const onVideoSelectHandler = video => {
 		setSelectedVideo(video);
+		setSearchText(video.snippet.title);
+		searchHandler(searchText);
 	}
 
 	return (
